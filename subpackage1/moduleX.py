@@ -13,7 +13,7 @@ import sys
 print(sys.version)
 print(sys.version_info)
 print(sys.path)
-# todo 在 webcrawler
+# todo 在 webcrawler 試試看
 
 # from .moduleY import sample
 # 這種情況 
@@ -21,5 +21,8 @@ print(sys.path)
 # 可以成功
 
 
+# from moduleY import sample
+# 這種方法可以 是因為 假設 moduleY 是全局維一的變數 
+# 如果這個 名稱並非維一   將會有問題
+# 或是如果 專案結構更加複雜 需要加上 package directory
 from moduleY import sample
-# 這種方法可以 是因為把
